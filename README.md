@@ -1,1 +1,1 @@
-https://github.com/SleepyBunszzz/zakrivayuschiy-teg-f
+https://sleepybunszzz.github.io/zakrivayuschiy-teg-f/
