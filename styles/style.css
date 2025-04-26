@@ -24,7 +24,7 @@
 .page__section {
   display: grid;
   justify-self: center;
-  inline-size: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem);
+  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
 
 .header {
@@ -39,6 +39,7 @@
   border: 2px solid currentColor;
   gap: 18px;
   margin-bottom: 50px;
+  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
 
 .header__logo {
@@ -275,7 +276,7 @@
 }
 
 .card__like-button {
- min-inline-size: 130px;
+  min-inline-size: 130px;
   block-size: 36px;
 }
 
@@ -300,7 +301,6 @@
 .button:hover::before {
   transform: translateX(0);
 }
-
 
 .button__text {
   display: flex;
@@ -363,9 +363,14 @@
 .popup__content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-items: center;
-  max-inline-size: 353px;
+}
+
+dialog.popup {
+  padding: 0px;
+  max-inline-size: 356px;
+  width: 100%;
+  border: 2px solid #000;
 }
 
 .popup__content::backdrop {
@@ -376,14 +381,14 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding-top: 33px;
-  padding-left: 33px;
-  padding-right: 33px;
+  padding: 30px;
 }
 
 .popup__controller {
   width: 100%;
-  padding: 10px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
 }
 
 .popup__close-button {
@@ -393,9 +398,18 @@
 }
 
 @media (width <= 376px) {
+  .page {
+    padding: 100px 0;
+    min-inline-size: 320px;
+    min-block-size: 100dvb;
+  }
+  .page__section {
+    inline-size: clamp(7.5rem, 6.9231rem + 2.4615vw, 8rem) 0;
+  }
   .header {
-    padding: 119px 14px;
-    gap: 19px;
+    gap: 18px;
+    margin-bottom: 48px;
+    inline-size: clamp(7.5rem, 6.9231rem + 2.4615vw, 8rem) 0;
   }
 
   .header__logo {
@@ -409,6 +423,7 @@
   .card__title {
     font-size: 18px;
     line-height: 21.3px;
+    padding: 5px 10px 4.7px 10px;
   }
 
   .card__description {
@@ -431,7 +446,7 @@
     justify-content: center;
     padding: 15px 20px;
     gap: 10px;
-    margin-top: 53px;
+    margin-top: 51px;
   }
 
   .button__save-icon {
@@ -447,7 +462,11 @@
     display: flex;
     align-items: center;
     gap: 20px;
- width: 341px;
   }
 
+  dialog.popup {
+    padding: 0px;
+    max-inline-size: 342px;
+    width: 100%;
+  }
 }
