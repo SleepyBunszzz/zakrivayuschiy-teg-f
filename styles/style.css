@@ -18,7 +18,7 @@
   background-attachment: fixed;
   background-color: var(--br-color);
   color: var(--accent-color);
-  padding: 100px 0;
+  margin: 100px 0;
 }
 
 .page__section {
@@ -245,6 +245,7 @@
 
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
@@ -376,7 +377,7 @@ dialog.popup {
 }
 
 .popup__content::backdrop {
-  background: rgba(255 255 255 / 0.75);
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 .popup__header {
