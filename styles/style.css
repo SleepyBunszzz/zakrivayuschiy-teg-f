@@ -376,7 +376,7 @@ dialog.popup {
   border: 2px solid #000;
 }
 
-.popup__content::backdrop {
+.popup[open]::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
